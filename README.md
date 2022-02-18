@@ -5,6 +5,13 @@ This repo contains the necessary scripts to update chocolatey packages and ubunt
 1.  Copy **check-updates.ps1** to `%UserProfile%\Desktop`.
 2.  Copy **check-updates-launcher.cmd** to `%AppData%\Microsoft\Windows\Start Menu\Programs\Startup`
 
-## Usage
+## How does it work
 
-Every time the machine is started, when a user logs in, a PowerShell window will be shown maximized and will check for chocolatey package updates and then will check for ubuntu package updates. The user has the option to update or skip each one.
+```
+GIVEN the user is logged out
+WHEN the user logs in
+THEN a PowerShell window is shown maximized
+AND it checks for chocolatey package updates
+AND it checks for ubuntu package updates
+AND the user has the option to update or skip each one
+```
